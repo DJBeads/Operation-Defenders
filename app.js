@@ -7,7 +7,9 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
-var app = express(); //lets try this again
+var app = express();
+
+app.get // i think a send request should be put here
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -39,3 +41,7 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+app.listen(3000, () => {
+  console.log('Running on port 3000');
+    })
