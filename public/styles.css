@@ -79,3 +79,77 @@ body {
     font-size: 30px;
     z-index: 1;
 }
+label {
+    border:1px solid #a2a2a2;
+    padding:13px;
+    margin:0 0 10px;
+    display:block;
+    border-radius: 20px 20px ;
+    box-shadow: 5px 5px 5px silver;
+    padding-right: 200px;
+    background-color: white;
+    font-size: 16px;
+    font-family: Helvetica;
+
+
+
+
+}
+
+nav {
+
+    text-align: center;
+}
+
+
+
+label:hover {
+    background: #AEAFC7;
+    cursor:pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+nav li {
+    position: absolute;
+    display: inline;
+    margin: 10px;
+    /* border-style:solid;
+    border-width:thin; */
+
+}
+
+.answers {
+position: absolute;
+    bottom: 269px;
+}
+
+.question {
+    font-size: 18px;
+    font-family: Helvetica, Bold;
+
+
+
+
+
+}
+
+/* --------------- constant ---------------------------- */
+
+.phoneView {
+    position: absolute;
+    z-index: -1;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 3%;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 365px;
+    height: 645px;
+}
+
+
+
+/* ------------------------------------------- */
