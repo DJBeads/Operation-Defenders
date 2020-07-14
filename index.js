@@ -28,7 +28,7 @@ app.use(function (req, res, next) {
 
 app.use(express.static('./public'));
 
-// do not touch this code
+// do not touch this code and do not touch
 app.engine('handlebars', hb());
 app.set('view engine', 'handlebars');
 // do not touch this code
