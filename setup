@@ -1,0 +1,35 @@
+create table questions
+(
+    id         serial not null
+        constraint questions_pk
+            primary key,
+    text_field varchar
+);
+
+alter table questions
+    owner to postgres;
+
+create unique index questions_id_uindex
+    on questions (id);
+
+    insert into questions(id, text_field) values (1, 'Wie ist das richtige Verhalten in einer Gewaltsituation?')
+
+create table answers
+(
+    id          serial not null
+        constraint answers_pk
+            primary key,
+    correct     boolean,
+    explanation text
+);
+
+alter table answers
+    owner to postgres;
+
+create unique index answers_id_uindex
+    on answers (id);
+
+insert into answers(id, correct, explanation) VALUES (1, true, 'Suche einen Mithelfer');
+insert into answers(id, correct, explanation) VALUES (2, false, 'Wegsehen zum Eigenschutz');
+insert into answers(id, correct, explanation) VALUES (3, false, 'Provoziert den Gegner um vom Opfer abzulenken');
+insert into answers(id, correct, explanation) VALUES (4, false, 'Greife den Täter von hinten an');
