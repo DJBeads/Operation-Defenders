@@ -18,9 +18,10 @@ body {
     margin-left: 3%;
     border: 2px solid black;
     border-radius: 15px;
-    width: 490px;
-    height: 850px;
+    width: 365px;
+    height: 645px;
 }
+
 
 
 /* ------------------------------------------- */
@@ -33,10 +34,10 @@ body {
 
 .videoContainer iframe {
     display: flex;
-    width: 120%;
+    width: 100%;
     /* height: 50%; */
-    margin-top: 77%;
-    margin-left: 35%;
+    margin-top: 52%;
+    margin-left: 18%;
 }
 
 .linkContainer button {
@@ -46,8 +47,8 @@ body {
     background-color: #fec423;
     font-size: 30px;
     font-style: inherit;
-    margin-left: 5%;
-    margin-top: 5%;
+    margin-left: 38%;
+    margin-top: 80%;
 }
 
 .linkContainer button:hover {
@@ -58,12 +59,18 @@ body {
     text-decoration: none;
 }
 
-#quiz {
+
+
+.quiz button {
     position: absolute;
     z-index: 3;
-    color: #fec423;
-    font-size: 40px;
+    background-color: #fec423;
+    font-size: 30px;
     font-style: inherit;
-    margin-left: 10%;
-    margin-top: 30%;
+    margin-left: 5%;
+    margin-top: 44%;
+}
+
+.quiz button a {
+    text-decoration: none;
 }

@@ -1,3 +1,5 @@
 # Default ignored files
-/.idea/workspace.xml
+.idea
 node_modules
+**/*.iml
+dab.lenucksl.eu.pem
