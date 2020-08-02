@@ -1,22 +1,14 @@
-
-<div class="question">Question1
-    <ul class="answers">
-        <li><label>
-            <input name="Question0" id="wrong" type="checkbox"> Answer1</label></li>
-        <li><label>
-            <input name="Question0" id="wrong" type="checkbox"> Answer2</label></li>
-        <li><label>
-            <input name="Question0" id="correct" type="checkbox"> Answer3</label></li>
-        <li><label>
-            <input name="Question0" id="wrong" type="checkbox"> Answer4</label></li>
-    </ul>
-</div>
-
-
-
 <div class="phoneView">
-    <img id="background" src="/images/quiznew.png">
+      <img id="background" src="/images/quiznew.png">
 </div>
 
 
+<div class="answers">
+<form action="/answer" method="post">
+{{#each answers}}
+    <label for="question1">{{explanation}}</label>
+    <input type="radio" name="question" id="question1" value="1">
+
+{{/each}}
+</form>
 </div>

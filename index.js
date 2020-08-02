@@ -7,6 +7,7 @@ var hb = require('express-handlebars');
 var cookieSession = require('cookie-session');
 const csurf = require('csurf');
 
+const answerRouter = require('./routes/answer');
 // ---------------middleware---------------
 app.use(
   cookieSession({
@@ -14,6 +15,8 @@ app.use(
     maxAge: 1000 * 60 * 60 * 24 * 14
   })
 );
+
+app.use('/answer', answerRouter);
 
 app.use(
   bodyParser.urlencoded({
